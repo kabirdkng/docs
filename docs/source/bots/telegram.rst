@@ -48,7 +48,7 @@ Upon receiving the ``/wallet`` command, the bot responds with a QR code image an
 
     Bot: Please scan this QR code with your wallet app to connect.
 
-.. figure:: _static/wc.png
+.. figure:: /_static/wc.png
    :alt: QR code for wallet connection
 
    The QR code for wallet connection.
