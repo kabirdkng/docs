@@ -1,4 +1,4 @@
-Kadena Credits Contract Functions
+KadenAI Credits Contract Functions
 ==================================
 
 **Contract / Module:**
@@ -24,7 +24,7 @@ Creates a new payment entry and updates the credit balance for an account.
 
   pact> (create-payment "alice" (read-keyset "alice-guard") 100)
   true
-  
+
 create-tx-id
 ~~~~~~~~~~~~
 Generates a unique transaction ID based on account details and timestamp.
