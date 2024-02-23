@@ -18,4 +18,4 @@ Contents
    credits
    taxes
    nft
-   api
+   api/index
