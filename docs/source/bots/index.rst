@@ -1,4 +1,4 @@
-API Endpoints
+Bot Integrations
 =============
 
 This section covers bot integrations.
