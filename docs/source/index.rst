@@ -1,13 +1,9 @@
-Welcome to Lumache's documentation!
+KadenAI documentation library
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+**KadenAI** is a project focused on building integrations
+for web3 projects and leveraging technology to provide the
+best possible user experience.
 
 .. note::
 
@@ -17,6 +13,9 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
 
-   usage
+   credits
+   taxes
+   nft
    api
