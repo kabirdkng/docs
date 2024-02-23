@@ -19,3 +19,4 @@ Contents
    taxes
    nft
    api/index
+   bots/index
