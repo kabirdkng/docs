@@ -7,7 +7,7 @@ copyright = '2024, KadenAI'
 author = 'Amir'
 
 release = '0.1'
-version = '0.1.0'
+version = '0.1.1'
 
 # -- General configuration
 
@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinxcontrib.httpdomain',
 ]
 
 intersphinx_mapping = {
