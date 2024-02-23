@@ -1,4 +1,4 @@
-KadenAI Credits Contract Functions
+Credits Contract Functions
 ==================================
 
 **Contract / Module:**
@@ -103,7 +103,8 @@ Retrieves payment information for a given transaction ID.
     ,"payer": "bob"
     ,"payer-guard": KeySet {keys: [bob-key],pred: keys-any}
     ,"payment-timestamp": "2022-01-01T00:00:00Z"
-    ,"qty": 5}
+    ,"qty": 5
+  }
 
 get-bank
 ~~~~~~~~
