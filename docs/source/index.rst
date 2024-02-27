@@ -21,3 +21,4 @@ Contents
    api/index
    bots/index
    heron
+   pact/index

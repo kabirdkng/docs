@@ -95,7 +95,7 @@ Retrieves payment information for a given transaction ID.
 
 * **Returns**: An object of type ``payment-schema`` containing payment details.
 
-.. code-block:: lisp
+.. code:: lisp
 
   pact> (get-payment-info "tx-id")
   {"id": "Tf-xOa79e1WphqdDYJni2Sqr9e80ut6udCaZmC9Wah8"
