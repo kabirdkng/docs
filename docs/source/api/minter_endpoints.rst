@@ -8,7 +8,7 @@ Standard Minting Operation
 
 .. http:post:: /api/0/v2minter/standard
 
-   Mints a new token with the provided image and metadata. Authentication is required and is done via cookies.
+   Mints a new token with the provided image and metadata. Authentication is required to use this endpoint.
 
    **Request Body**
 

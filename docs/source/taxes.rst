@@ -30,7 +30,7 @@ Retrieves all cost entries.
 
 * **Returns**: A list of objects of type ``cost-schema``, each representing a year and its associated cost.
 
-.. code:: lisp
+.. code-block:: lisp
 
   pact> (get-costs)
   [
