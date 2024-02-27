@@ -61,7 +61,8 @@ The contract includes utility functions for account validation, balance queries,
 
 .. code-block:: lisp
 
-    (defun validate-account (account:string) )
+    (defun validate-account:bool (account:string))
+    true
 
 **Get Balance**:
 
