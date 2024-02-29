@@ -1,5 +1,5 @@
-NFT
-===
+NFT MINTING
+===========
 
 .. autosummary::
    :toctree: generated

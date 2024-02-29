@@ -50,6 +50,7 @@ Upon receiving the ``/wallet`` command, the bot responds with a QR code image an
 
 .. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/wc.png
     :alt: QR code for wallet connection
+    :align: center
 
 Wallet Connection Completion
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -17,7 +17,7 @@ Contents
 
    credits
    taxes
-   nft
+   nfts/index
    api/index
    bots/index
    heron
