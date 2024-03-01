@@ -1,4 +1,4 @@
-NFT DOCUMENTATION
+NFT Documentation
 =================
 
 This section covers NFT generation and configuration.
@@ -8,3 +8,4 @@ This section covers NFT generation and configuration.
 
    minter
    view
+   credits

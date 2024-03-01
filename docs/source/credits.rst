@@ -4,7 +4,8 @@ Credits Contract Functions
 **Contract / Module:**
   * kadenai-credits
 
-This module contains functions related to credit payments and management within the Kadena blockchain environment.
+This module contains functions related to credit payments and management within the Kadena blockchain environment. For information on how to 
+use this contract within a web app, please see :doc:`/nfts/credits`
 
 General functions
 -----------------

@@ -1,7 +1,8 @@
 NFT Minter
 ==========
 
-This guide outlines the process for minting an NFT (Non-Fungible Token) on our platform. Note that minting an NFT requires credits, which can be purchased on the marketplace.
+This guide outlines the process for minting an NFT (Non-Fungible Token) on our platform. Note that minting an NFT requires credits, which can be purchased on the marketplace. For more information on how credits work and how to purchase them, see :doc:`credits`.
+
 
 Step 1: Select an Image
 -----------------------
