@@ -73,6 +73,19 @@ Users can disconnect their wallets by using the ``/disconnect`` command. This en
    User: /disconnect
    Bot: You are now disconnected. Your wallet session has been securely terminated.
 
+Kadena Token Price Lookups
+--------------------------
+
+Provides real time price charts and market cap(if supplied) for Kadena fungible Tokens.
+
+.. code-block:: none
+
+   User: /price heron
+   Bot: Please type in a Valid price Symbol
+  
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/telegram/p1.png
+    :alt: Price
+    :align: center
 
 Minting NFTs
 ------------
@@ -106,3 +119,4 @@ Describes other features such as participating in games, viewing projects, and i
 
    User: /projects
    Bot: <Describes available projects and integration process>
+
