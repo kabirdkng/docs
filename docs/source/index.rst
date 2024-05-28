@@ -22,3 +22,4 @@ Contents
    bots/index
    heron
    pact/index
+   ide/index
