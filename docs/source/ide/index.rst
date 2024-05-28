@@ -1,7 +1,7 @@
 IDE Functionality
 =================
 
-This section covers bot integrations.
+This section covers the functionality of the IDE
 
 .. toctree::
    :maxdepth: 2

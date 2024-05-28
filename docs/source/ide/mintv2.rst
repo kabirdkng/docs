@@ -83,5 +83,5 @@ Conclusion
 
 Following these steps will allow you to successfully mint a V2 NFT. If you have any questions or need further assistance, please contact our support team.
 
----
+
 
