@@ -6,28 +6,6 @@ Introduction
 
 Welcome to the KX API! This documentation provides all the information you need to interact with the API.
 
-Endpoints
----------
-
-1. Create DAO
-2. Add Member to DAO
-3. Add Admin to DAO
-4. Assign Custom Role
-5. Update Member in DAO
-6. Update Admin in DAO
-7. Delete Member from DAO
-8. Delete Admin from DAO
-9. Get DAO Info
-10. Get DAOs
-11. Create Poll
-12. Get Poll Results
-13. Get Stored Polls
-14. Cast Vote
-15. Get Twitter ID by Username
-16. Register
-17. Twitter Callback
-18. Check Session Status
-
 Create DAO
 ----------
 
