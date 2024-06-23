@@ -23,3 +23,4 @@ Contents
    heron
    pact/index
    ide/index
+   kx/index
