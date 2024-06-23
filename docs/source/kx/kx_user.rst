@@ -1,9 +1,6 @@
 KX API User Documentation
 =========================
 
-.. contents:: Table of Contents
-   :depth: 2
-
 Introduction
 ------------
 

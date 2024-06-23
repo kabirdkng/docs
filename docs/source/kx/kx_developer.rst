@@ -1,8 +1,7 @@
 KX API Developer Documentation
 ==============================
 
-.. contents:: Table of Contents
-   :depth: 2
+These documents are intended for developers who want to integrate with the KX API.
 
 API Endpoints
 -------------
