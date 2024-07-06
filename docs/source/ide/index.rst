@@ -109,13 +109,13 @@ this shall open a form to put our token contract address and token Symbol, now w
 
 .. image:: path/to/idetest26.png
    :alt: token add form
-   :align: cente
+   :align: center
 
 after adding our token we can see our token symbol along with other tokens in the wallet and now we can see in our wallet we have 1 Billion SWEETY token.
 
 .. image:: path/to/idetest27.png
    :alt: wallet with tokens
-   :align: cente
+   :align: center
 
 
 As we can see the tokens in our wallet, now its time to manage our newly created token.
@@ -218,7 +218,7 @@ which is the generated transaction hash, also we can see
 
 .. code-block:: json 
 
-{
+ {
   "last-k": 0,
   "leg1": {
     "reserve": 0,
@@ -271,16 +271,71 @@ which is the generated transaction hash, also we can see
       }
     }
   }
-};
+ }
 
 this json is the data of dex for our token, as we can see the data is containg the dex pair we just created, lets move forward to adding liquidity to our pair, so people can trade our token in the dex.
 
 Adding Liquidity to our dex pair
 --------------------------------
-First time we shall add initial liquidity of our token, so that it can be traded in the dex with a ratio with the quote currency we just set pair with.
+First time we shall add initial liquidity of our token, so that it can be traded in the dex with a ratio for our pair.
 
-for that first we click on "Set Dex Liquidity" button, and it will open a modal to set initial liquidity of our token
+for that first we click on "Set Dex Liquidity" button, and it will open a modal to set initial liquidity for our dex pair
 
 .. image:: path/to/idetest24.png
    :alt: Set initial liquidity modal
+   :align: center
+
+now we shall add KDA amount and our token amount to add liquidity for our pair, we are giving 7 kda and 500K token for liquidity(you can set liquidity in whatever ratio you want).
+then we shall click on Submit Button.
+
+.. image:: path/to/idetest28.png
+   :alt: liquidity form
+   :align: center
+
+after clicking on submit, we now can see code in our pact window 
+
+``(use n_3b878bdca18974c33dec88e791dd974107edc861.exchange)``
+``(add-liquidity coin n_f841e63968ab2acf9be57858cd1f64336e2a9310.sweet-token (read-decimal 'kdaAmount) (read-decimal 'tokenAmount) 0.0 0.0 "k:1c6cbbb34a8ef4f745738a9a7eb324db84b21e1e015c55f2c83cb1a9917198e8" "k:1c6cbbb34a8ef4f745738a9a7eb324db84b21e1e015c55f2c83cb1a9917198e8" (read-keyset 'ks))``
+
+this is the code to add liquidity for our pair, now if we need to see the env data or do changes in the ratio we can click to "Show Env Data" in the settings panel, it will show the env data in our pact window
+
+.. image:: path/to/idetest29.png
+   :alt: env data
+   :align: center
+
+next, we are going to test sign the command to see if everything is working fine.
+
+.. image:: path/to/idetest30.png
+   :alt: test sign
+   :align: center
+
+after signing the command with our eckoWallet, we can see
+
+.. code-block:: json
+
+ {
+   "amount0": 7,
+   "amount1": {
+    "decimal": "500000.000000000000"
+    },
+  "supply": 1870.82869338697,
+  "liquidity": 1870.72869338697 
+ }
+
+it seems our transaction is going to be successfull, now lets Submit the transaction by clicking on the submit Button
+
+.. image:: path/to/idetest31.png
+   :alt: submit tx
+   :align: center
+
+after clicking submit our wallet popped up and now we need to sign by clicking on confirm to submit the transaction to the blockchain
+
+.. image:: path/to/idetest32.png
+   :alt: wallet confirm
+   :align: center
+
+upon confirming it will submit the transaction and generate a request key, after block confirmation we can see our transaction is successfull and we successfully added liquidity in our dex pair.
+
+.. image:: path/to/idetest33.png
+   :alt: test sign
    :align: center
