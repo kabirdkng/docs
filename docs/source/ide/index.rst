@@ -111,13 +111,58 @@ to manage our contract first we need to select our contact, for that we shall cl
    :alt: manage Smart contract
    :align: center
 
-we now can see a modal to search for smart contracts, also we can see our newly generated token contract address highlighted with green colour and its indicating that we are the owner of the smart contract. we shall select our token by clicking on it.
+we now can see a modal to search for smart contracts, also we can see our newly generated token contract highlighted with green colour and its indicating that we are the owner of the smart contract. we now shall select our token by clicking on it.
 
 .. image:: path/to/idetest17.png
    :alt: select token contract
    :align: center
 
-after selecting our token address we now can see our token address is showing under Manage Smart Contract, now we are ready to start managing our smart contract.
+after selecting our token, we now can see our token address is showing under Manage Smart Contract. Now we are ready to manage our smart contract.
 
+Setting dex pair for our token
+-------------------------------
 
+first we shall set a dex pair to trade on the dex for that we are clicking on "Set Dex Pair" button.
 
+.. image:: path/to/idetest18.png
+   :alt: set dex pair
+   :align: center
+
+by clicking on set dex pair, we now can see pact command to create a dex pair on the pact window,
+
+``(n_3b878bdca18974c33dec88e791dd974107edc861.exchange.create-pair coin n_f841e63968ab2acf9be57858cd1f64336e2a9310.sweet-token "")``
+
+where 
+
+``n_3b878bdca18974c33dec88e791dd974107edc861.exchange.create-pair``
+this is the pact command to create a pair on the dex
+
+``coin``
+this the the quote currency we are wishing to make pair with in our case its (KDA)
+
+``n_f841e63968ab2acf9be57858cd1f64336e2a9310.sweet-token``
+and this is our sweet-token contract address.
+
+now as we are keeping it simple for the first time, we now click on "Test sign" to see our wode is working as intended, it will open our wallet to test sign the command
+
+.. image:: path/to/idetest19.png
+   :alt: test sign command
+   :align: center
+
+as we can see it is working fine, next we shall click on the submit button and confirm in our wallet to submit the transaction to the blockchain.
+
+.. image:: path/to/idetest20.png
+   :alt: test sign command
+   :align: center
+
+after confirming with our wallet it will sumbit the transaction and give us request key
+
+.. image:: path/to/idetest21.png
+   :alt: test sign command
+   :align: center
+
+just a few moments and the transaction get confirmed by the blockchain and now we successfully created dex pair for our newly created SWEETY token.
+
+.. image:: path/to/idetest22.png
+   :alt: test sign command
+   :align: center
