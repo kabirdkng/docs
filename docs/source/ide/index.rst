@@ -337,5 +337,64 @@ after clicking submit our wallet popped up and now we need to sign by clicking o
 upon confirming it will submit the transaction and generate a request key, after block confirmation we can see our transaction is successfull and we successfully added liquidity in our dex pair.
 
 .. image:: path/to/idetest33.png
-   :alt: test sign
+   :alt: trasaction successful
    :align: center
+
+
+Swapping our newly generateed token on the dex
+===============================================
+
+As now we have successfully added liquidity to our SWEETY/KDA pair, we now can swap one to another in our Dex. to do that, first we need to click on "User Commands" tab inside our manage smart contract menu, then we can see a option named "Swap Tokens". we need to click there.
+
+.. image:: path/to/idetest34.png
+   :alt: Swap token option
+   :align: center
+
+after clicking on swap token now a modal pops up infront of us to swap tokens, here we are giving 1.01 KDA and it is showing us that we shall receive estimated 62880 SWEETY tokens, now after checking it we hit the submit button.
+
+.. image:: path/to/idetest35.png
+   :alt: Swap form
+   :align: center
+
+after submitting the form we now can see PACT code to swap our tokens in the pact window.
+
+``(n_3b878bdca18974c33dec88e791dd974107edc861.exchange.swap-exact-in``
+        
+``(read-decimal 'amountKDA)``
+        
+``(read-decimal 'amountTokenWithSlippage)``
+        
+``[coin n_f841e63968ab2acf9be57858cd1f64336e2a9310.sweet-token]``
+        
+ ``"k:1c6cbbb34a8ef4f745738a9a7eb324db84b21e1e015c55f2c83cb1a9917198e8"``
+        
+ ``"k:1c6cbbb34a8ef4f745738a9a7eb324db84b21e1e015c55f2c83cb1a9917198e8"``
+        ``(read-keyset 'ks))``
+
+now we need to test sign the transaction to see if everything is alright
+
+after test sign we now can see our preflight transaction results
+
+.. image:: path/to/idetest36.png
+   :alt: transaction results
+   :align: center
+
+now as we can see our transaction, now we shall click on submit to Sign and send the transaction to the blockchain.
+
+.. image:: path/to/idetest36.png
+   :alt: transaction results
+   :align: center
+
+now lets confirm the transaction.
+
+.. image:: path/to/idetest37.png
+   :alt: wallet confirmation
+   :align: center
+
+after confirming it gave us a transaction hash, upon block confirmation it becomes green and we successfully swapped kda for our `TokenGo <http://tokengo.fun>`_ generated SWEETY token. 
+
+.. image:: path/to/idetest38.png
+   :alt: Transaction hash
+   :align: center
+
+now, lets copy our transation hash check our transaction on `kadena block explorer <https://explorer.chainweb.com/>`_ dont forget to set the network to testnet. thats all for now, keep exploring and have fun with `tokengo.fun <http://tokengo.fun>`
