@@ -95,7 +95,31 @@ after the block confirmations we shall see all the transactions completed and no
    :alt: Transactions Completed
    :align: center
 
-now we can see here "After Deployment, Manage your Contract from the IDE Tab" so now its time to manage our newly created token.
+
+viewing our generated token in Ecko wallet
+-------------------------------------------
+
+To view our token in the ecko wallet we need to add the contract address and SYMBOL of our token to eckoWallet by clicking on the plus (+) button in your eckoWallet.
+
+.. image:: path/to/idetest25.png
+   :alt: adding token to wallet
+   :align: center
+
+this shall open a form to put our token contract address and token Symbol, now we add them and click on Add Token button.
+
+.. image:: path/to/idetest26.png
+   :alt: token add form
+   :align: cente
+
+after adding our token we can see our token symbol along with other tokens in the wallet and now we can see in our wallet we have 1 Billion SWEETY token.
+
+.. image:: path/to/idetest27.png
+   :alt: wallet with tokens
+   :align: cente
+
+
+As we can see the tokens in our wallet, now its time to manage our newly created token.
+
 
 Managing our token
 ===================
@@ -119,10 +143,10 @@ we now can see a modal to search for smart contracts, also we can see our newly 
 
 after selecting our token, we now can see our token address is showing under Manage Smart Contract. Now we are ready to manage our smart contract.
 
-Setting dex pair for our token
+Creating dex pair for our token
 -------------------------------
 
-first we shall set a dex pair to trade on the dex for that we are clicking on "Set Dex Pair" button.
+first we shall set a dex pair to trade on the dex, for that we are clicking on "Set Dex Pair" button.
 
 .. image:: path/to/idetest18.png
    :alt: set dex pair
@@ -146,23 +170,117 @@ and this is our sweet-token contract address.
 now as we are keeping it simple for the first time, we now click on "Test sign" to see our wode is working as intended, it will open our wallet to test sign the command
 
 .. image:: path/to/idetest19.png
-   :alt: test sign command
+   :alt: test sign
    :align: center
 
 as we can see it is working fine, next we shall click on the submit button and confirm in our wallet to submit the transaction to the blockchain.
 
 .. image:: path/to/idetest20.png
-   :alt: test sign command
+   :alt: wallet confirm
    :align: center
 
 after confirming with our wallet it will sumbit the transaction and give us request key
 
 .. image:: path/to/idetest21.png
-   :alt: test sign command
+   :alt: request key
    :align: center
 
-just a few moments and the transaction get confirmed by the blockchain and now we successfully created dex pair for our newly created SWEETY token.
+just a few moments and the transaction get confirmed by the blockchain. Now we successfully created dex pair for our newly created token.
 
 .. image:: path/to/idetest22.png
-   :alt: test sign command
+   :alt: trasnsaction success
+   :align: center
+
+next we are going to check the dex pair data we just created.
+
+Getting data of dex pair for our token
+--------------------------------------
+
+to get data of dex pairs for our token, we click on "Get Dex Pair Data"
+
+.. image:: path/to/idetest23.png
+   :alt: get dex pair data
+   :align: center
+
+after clicking, in the pact window we can see there is again a code 
+
+``(n_3b878bdca18974c33dec88e791dd974107edc861.exchange.get-pair coin n_f841e63968ab2acf9be57858cd1f64336e2a9310.sweet-token)``
+
+this code is pact function to to get pair details of the dex
+
+below the code we also can see 
+
+**TX Hash: x2KKfixvXYsxFkbN-OcY_UfkrmKbtSRmuvGQZTzlbfk**
+
+which is the generated transaction hash, also we can see 
+
+**Tx Results**
+
+.. code-block:: json 
+
+{
+  "last-k": 0,
+  "leg1": {
+    "reserve": 0,
+    "token": {
+      "refSpec": [
+        {
+          "namespace": null,
+          "name": "fungible-xchain-v1"
+        },
+        {
+          "namespace": null,
+          "name": "fungible-v2"
+        }
+      ],
+      "refName": {
+        "namespace": "n_f841e63968ab2acf9be57858cd1f64336e2a9310",
+        "name": "sweet-token"
+      }
+    }
+  },
+  "fee-account": "fyhk3TyfP7NRMBBCNRi5ePKFV0x4zRzXE89T6STZeto",
+  "locked": false,
+  "guard": {
+    "args": [],
+    "fun": "n_3b878bdca18974c33dec88e791dd974107edc861.exchange.enforce-null"
+  },
+  "account": "VgmjEpmAL4hE2I6_QAsvpT3hMHKjXpkMPc79-KzdZsI",
+  "fee-guard": {
+    "args": [
+      "coin:n_f841e63968ab2acf9be57858cd1f64336e2a9310.sweet-token"
+    ],
+    "fun": "n_3b878bdca18974c33dec88e791dd974107edc861.exchange.enforce-fee-access"
+  },
+  "leg0": {
+    "reserve": 0,
+    "token": {
+      "refSpec": [
+        {
+          "namespace": null,
+          "name": "fungible-xchain-v1"
+        },
+        {
+          "namespace": null,
+          "name": "fungible-v2"
+        }
+      ],
+      "refName": {
+        "namespace": null,
+        "name": "coin"
+      }
+    }
+  }
+};
+
+this json is the data of dex for our token, as we can see the data is containg the dex pair we just created, lets move forward to adding liquidity to our pair, so people can trade our token in the dex.
+
+Adding Liquidity to our dex pair
+--------------------------------
+First time we shall add initial liquidity of our token, so that it can be traded in the dex with a ratio with the quote currency we just set pair with.
+
+for that first we click on "Set Dex Liquidity" button, and it will open a modal to set initial liquidity of our token
+
+.. image:: path/to/idetest24.png
+   :alt: Set initial liquidity modal
    :align: center
