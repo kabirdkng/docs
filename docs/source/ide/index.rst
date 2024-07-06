@@ -5,7 +5,7 @@ Getting Started with the TokenGo IDE
 The `TokenGo <http://tokengo.fun>`_ IDE is a powerful tool for creating and managing your own cryptocurrency tokens on Kadena Blockchain. Follow these steps to get started:
 
 Prerequisites Before we start generating our token on testnet
--------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * First we download the eckoWallet extension from `chrome web store <https://chromewebstore.google.com/detail/eckowallet/bofddndhbegljegmpmnlbhcejofmjgbn>`_. then we create our kadena account.
 .. image:: path/to/idetest1.png
    :alt: chrome web store
@@ -99,4 +99,25 @@ now we can see here "After Deployment, Manage your Contract from the IDE Tab" so
 
 Managing our token
 ===================
+Now as our simple token is generated, we now can set dex pair, get dex pair and also can set Liquidity for the token to trade on the dex. lets get into them one by one.
+
+.. image:: path/to/idetest15.png
+   :alt: ide initial
+   :align: center
+
+to manage our contract first we need to select our contact, for that we shall click on "Manage Smart Contract" in the right side settings panel, then we can see some options to manage smart contracts. We should click on "Select contract".
+
+.. image:: path/to/idetest16.png
+   :alt: manage Smart contract
+   :align: center
+
+we now can see a modal to search for smart contracts, also we can see our newly generated token contract address highlighted with green colour and its indicating that we are the owner of the smart contract. we shall select our token by clicking on it.
+
+.. image:: path/to/idetest17.png
+   :alt: select token contract
+   :align: center
+
+after selecting our token address we now can see our token address is showing under Manage Smart Contract, now we are ready to start managing our smart contract.
+
+
 
