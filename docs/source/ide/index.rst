@@ -273,7 +273,7 @@ which is the generated transaction hash, also we can see
   }
  }
 
-this json is the data of dex for our token, as we can see the data is containg the dex pair we just created, lets move forward to adding liquidity to our pair, so people can trade our token in the dex.
+this json is the data of dex-pair for KDA and our token, as we can see the data is containg the dex pair we just created, lets move forward to adding liquidity to our pair, so people can trade our token in the dex.
 
 Adding Liquidity to our dex pair
 --------------------------------
