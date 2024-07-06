@@ -397,4 +397,4 @@ after confirming it gave us a transaction hash, upon block confirmation it becom
    :alt: Transaction hash
    :align: center
 
-now, lets copy our transation hash check our transaction on `kadena block explorer <https://explorer.chainweb.com/>`_ dont forget to set the network to testnet. thats all for now, keep exploring and have fun with `tokengo.fun <http://tokengo.fun>`
+now, lets copy our transation hash check our transaction on `kadena block explorer <https://explorer.chainweb.com/>`_ dont forget to set the network to testnet. thats all for now, keep exploring and have fun with `tokengo.fun <http://tokengo.fun>`_
