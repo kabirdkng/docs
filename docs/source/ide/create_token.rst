@@ -36,7 +36,7 @@ Now that we have testnet Kadena in our Wallet, let's visit the `tokenGo <http://
    :alt: KTG Create Token Initial
    :align: center
 
-Like me, if you are using a new wallet and following our prerequisites, we shall see a green button, "Initiate Cross-Chain Transaction", and all of the chain statuses will be red except chain one because we have tested KDA on chain 1. As our Wallet is new and we don't have KDA on all the chains, clicking it will automate the transaction and transfer KDA to all of them. Now, let's click and sign it with our Wallet.
+Like me, if you are using a new wallet and following our prerequisites, we shall see a green button, "Initiate Cross-Chain Transaction", and all of the chain statuses will be red except chain one because we have testnet KDA on chain 1. As our Wallet is new and we don't have KDA on all the chains, clicking it will automate the transaction and transfer KDA to all of them. Now, let's click and sign it with our Wallet.
 
 .. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/idetest7.png
    :alt: KTG sign xChain transaction
