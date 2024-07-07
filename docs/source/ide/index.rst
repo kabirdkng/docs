@@ -1,5 +1,5 @@
-Token Creator Documentation
-===========================
+Token Creator
+=============
 
 This section covers all the available features for the Token Generator and IDE.
 
