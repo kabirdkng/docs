@@ -60,7 +60,7 @@ Here, we can see that our Wallet now has a balance on all the chains, and Chain 
    :alt: Wallet after X-chain transfer
    :align: center
 
-So, now again, we are heading towards Kadena's faucet <https://tools.kadena.io/faucet/existing>`_ and requesting 20 test KDA on chain 1. This time, we don't need to delete the "k:" from our account name; we paste our account name and click on "Fund 20 Coins."
+So, now again, we are heading towards Kadena's `faucet <https://tools.kadena.io/faucet/existing>`_ and requesting 20 test KDA on chain 1. This time, we don't need to delete the "k:" from our account name; we paste our account name and click on "Fund 20 Coins."
 
 .. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/idetest11.png
    :alt: faucet existing account
@@ -69,7 +69,7 @@ So, now again, we are heading towards Kadena's faucet <https://tools.kadena.io/f
 
 Generating our first token
 ===========================
-Now we have enough KDA to generate our first simple fungible token, we need to give it a name; in our case, we are generating a sweet, simple test token, so we are offering our 
+Now we have enough KDA to generate our first simple fungible token, we need to give it a name; in our case, we are generating a sweet, simple test token, so we are giving our 
 
 | Module(token) name "sweet-token" (you should give a unique module name here)
 | Symbol "SWEETY", (this will be our token identifier for this walkthrough)
@@ -105,7 +105,7 @@ To view our token in the ecko wallet, we need to add the contract address and SY
    :alt: adding a token to Wallet
    :align: center
 
-This shall open a form to put our token contract address and token Symbol; now we add them and click on Add Token Button. (If you are having issue finding your token address, your token address will be namespace.module-name in our case  n_f841e63968ab2acf9be57858cd1f64336e2a9310- our Namespace, and sweet-token our module name)
+This shall open a form to put our token contract address and token Symbol; now we add them and click on Add Token Button. (If you are having issue finding your token address, your token address will be namespace.module-name in our case  n_f841e63968ab2acf9be57858cd1f64336e2a9310 our Namespace, and sweet-token our module name)
 
 .. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/idetest26.png
    :alt: token add form
@@ -135,7 +135,7 @@ To manage our contract, first, we need to select our contact, for that, we shall
    :alt: manage Smart contract
    :align: center
 
-We can now see a model to search for smart contracts; also, we can see our newly generated token contract highlighted in green, indicating that we are the owner of the smart contract. We shall now select our token by clicking on it.
+We can now see a modal to search for smart contracts; also, we can see our newly generated token contract highlighted in green, indicating that we are the owner of the smart contract. We shall now select our token by clicking on it.
 
 .. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/idetest17.png
    :alt: select token contract
@@ -167,7 +167,7 @@ this the the quote currency we wish to pair with in our case its (KDA)
 ``n_f841e63968ab2acf9be57858cd1f64336e2a9310.sweet-token``
 and this is our sweet-token contract address.
 
-Now, as we are keeping it simple for the first time, we now click on "Test sign" to see our wode is working as intended, it will open our Wallet to test sign the command
+Now, as we are keeping it simple for the first time, we now click on "Test sign" to see our code is working as intended, it will open our Wallet to test sign the command
 
 .. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/idetest19.png
    :alt: test sign
