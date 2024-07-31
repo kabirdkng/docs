@@ -7,6 +7,7 @@ This section covers all the available features for the Token Generator and IDE.
    :maxdepth: 2
 
    create_token
+   create_presale_token
    mintv2
    transfer
    transfermulti
