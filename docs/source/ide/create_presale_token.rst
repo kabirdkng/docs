@@ -93,3 +93,66 @@ in a few moments the transction is confirmed, and now we can see all transaction
 .. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale5.png
    :alt: Confirmed Tx
    :align: center
+
+
+Managing our newly created Presale token contract
+=================================================
+
+To managae our newly created presale token, we first navigate to the IDE tab, then click on "Select Contract" under "Manage Smart Contract" menu in the right hand side Settings panel.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale6.png
+   :alt: Select Contract
+   :align: center
+
+now it opens a window to search for contracts, where we can see all the deployed contracts, also we can see the contract we just deployed, which is **"sale-token"**. now we selecting our sale token contract.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale7.png
+   :alt: Select sale Contract
+   :align: center
+
+Updating the Prices(Before presale Starts)
+------------------------------------------
+we want to update the price for a batch; previously we set 5KDA and 10KDA per batch respectively for phase-0 and phase-1, now we can change the price before the phase-0 start time we set when creating the presale token.
+
+to do that, first we click on "Update Prices (before sale begins)"
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale8.png
+   :alt: Update Prices
+   :align: center
+
+then it opens up a modal for us, and its showing the currenly set price for phase-0 and phase-1. in our case its 5KDA and 10KDA per batch.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale9.png
+   :alt: Current prices
+   :align: center
+
+now we are setting our new batch price to 6 KDA per batch for phase-0 and 9 KDA per batch for phase-1 and clicking on submit.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale10.png
+   :alt: Submit new Prices
+   :align: center
+
+after clicking it shows the code to update price on the IDE pact viewer, now we head to submit and sign our tracsaction
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale11.png
+   :alt: Submit new Prices
+   :align: center
+
+after clicking on submit, our wallet is prompting us to sign the transaction, now we click on confirm in our eckoWallet.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale12.png
+   :alt: Sign Transaction
+   :align: center
+
+after signing it will give us a transaction hash, and eventually it will be confirmed by the blockchain if our data is valid.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale13.png
+   :alt: Sign Transaction
+   :align: center
+
+now the new batch price for phase-0 and phase-1 is successfully set, now we need to wait for the whitelist sale or phase-0 to satrt.
+
+Whitelist sales
+----------------
+whitelist sale is a special type of presale where only whitelisted users can participate in the sale, for our sale-token a whitelisted user can buy upto 100 batches of SALE tokens.
+for that , first we need to whitelist accounts one by one, when we calling whitelist user function it will reserve 100 batches for each whitelisted wallet address.
