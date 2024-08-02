@@ -157,3 +157,144 @@ Whitelist Sales
 ----------------
 A whitelist sale is a special type of presale where only whitelisted users can participate. For our sale-token, a whitelisted user can buy up to 100 batches of SALE tokens. To whitelist accounts, we need to call the whitelist user function, which will reserve 100 batches for each whitelisted wallet address.
 
+Whitelist wallet Addresses
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+As phase-0 has started, it's time to whitelist wallet addresses. To do this, we need to call the "Whitelist Sales" function under the "Manage Smart Contract" section on the left-hand side settings panel.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale14.png
+   :alt: WhiteList Sales
+   :align: center
+
+Clicking on it will open a modal to input wallet addresses. Let's fill in some wallet addresses for whitelist sales.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale15.png
+   :alt: WhiteList wallet
+   :align: center
+
+After adding a wallet address, click on "Add Whitelist" to add the wallet address to the whitelist. This will show a new input field for wallet address input.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale16.png
+   :alt: WhiteList addresses
+   :align: center
+
+After adding all the whitelist addresses, click on submit.
+
+Submitting the form adds code to the IDE pact window, which will whitelist the wallet addresses for phase-0 sales. In our case, it will reserve 100 batches for each wallet address.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale17.png
+   :alt: WhiteList Code
+   :align: center
+
+Now that we have added all the whitelist addresses, submit and sign the transaction. Click on submit in the settings panel, which prompts your wallet to sign the transaction.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale18.png
+   :alt: WhiteList Submit
+   :align: center
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale19.png
+   :alt: WhiteList Sign
+   :align: center
+
+After signing the transaction with your wallet, it submits the transaction to the blockchain and shows a transaction ID, which is eventually confirmed.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale20.png
+   :alt: Txn Hash
+   :align: center
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale21.png
+   :alt: Confirmed Tx
+   :align: center
+
+
+Buying Whitelisted tokens
+-------------------------
+After transaction confirmation our whitelisted users can buy from the phase-0 presale using their wallet.
+
+After transaction confirmation, our whitelisted users can buy from the phase-0 presale using their wallet. We will now connect a wallet that is already whitelisted. For this, we will use Wallet Connect in Linx Wallet (or any WalletConnect compatible wallets like X-wallet, Zelcore, Koala, etc.).
+
+Connecting wallet using linx wallet wallet connect
+--------------------------------------------------
+First, click on "Connect Wallet" and select WalletConnect. It will open a QR code in front of us.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale22.png
+   :alt: Connect Wallet
+   :align: center
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale23.png
+   :alt: Wallet Connect
+   :align: center
+
+Open the Linx Wallet app on your mobile.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale27.png
+   :alt: Linx Wallet Mobile
+   :align: center
+
+After opening the Linx Wallet app, click on "Scan" to open the camera and scan the QR code.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale24.png
+   :alt: Scan option
+   :align: center
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale25.png
+   :alt: Scan Qr code
+   :align: center
+
+After scanning the QR code, your wallet prompts you to accept the connection request. Click on "Accept," and you are now connected to TokenGo with your Linx Wallet using WalletConnect.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale26.png
+   :alt: Accept Connection request
+   :align: center
+
+Buying Using Wallect Connect (Linx)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now that our wallet is connected to the site, we can buy tokens. First, select the contract as we did before.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale28.png
+   :alt: select Contract
+   :align: center
+
+It opens a window to search for modules. Search for our module name "sale-token" and select it.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale29.png
+   :alt: search contract
+   :align: center
+
+Now, click on "User Commands."
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale30.png
+   :alt: User Commands
+   :align: center
+
+Click on "Buy" to open a form to input the batch count you want to buy.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale31.png
+   :alt: Buy Command
+   :align: center
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale32.png
+   :alt: Buy submit
+   :align: center
+
+The form shows that you have a reserved batch, and the price for a batch is 6 KDA. Let's submit it.
+
+After submitting, the IDE displays the code. Since we want to buy only one batch, we just submit the transaction.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale33.png
+   :alt: Buy submit tx
+   :align: center
+
+After submitting, a transaction to sign in our Linx Wallet pops up, showing the expected transaction result as success. Tap on "Approve."
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale34.png
+   :alt: Linx Tx Approve
+   :align: center
+
+Upon approving, the TokenGo app shows a transaction hash, and it eventually gets blockchain confirmation.
+
+.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/presale36.png
+   :alt: Confirmed Tx
+   :align: center
+
+We have now successfully bought our whitelisted presale token. We bought 1 batch out of our reserved 100 batches, and we can buy 99 more batches during the presale period.

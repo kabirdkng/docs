@@ -375,10 +375,6 @@ now we need to test sign the transaction to see if everything is alright
 
 after test sign we now can see our preflight transaction results
 
-.. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/idetest36.png
-   :alt: transaction results
-   :align: center
-
 now as we can see our transaction, now we shall click on submit to Sign and send the transaction to the blockchain.
 
 .. image:: https://kai-docs.nyc3.cdn.digitaloceanspaces.com/ide/idetest36.png
